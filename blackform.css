@@ -1,0 +1,178 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #282828; 
+	font-size: 1em;
+}
+
+.container {
+	background: #31302B;
+	width: 85vw;
+	height: 85vh;
+	margin: auto;
+	margin-top: 10vh;
+	padding: 10vh;
+
+}
+
+.container .logo {
+	width: 10vw;
+	min-height: 10vh;
+	margin: auto;
+	
+}
+
+form {
+	background: #D2E8FC;
+	width: 40vw;
+	height: 50vh;
+	margin: auto;
+	margin-bottom: 5vh;
+	border: 10px solid #464541;
+	border-radius: 7px;
+
+}
+ form h2 {
+ 	/*border: 3px solid #F2672E;*/
+ 	/*border-radius: 7px 7px 0 0;*/
+ 	/*outline: 3px solid #F2672E;*/
+ 	/*outline-offset: -3.7px;*/
+
+ }
+
+form h2, form .centerform li button {
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	background: #F2672E;
+	padding: 2vh;
+}
+
+.centerform {
+	width: 30vw;
+	height: 20vh;
+	margin: auto;
+	margin-top: 6vh;
+
+}
+ .centerform li {
+ 	margin: auto;
+ 	text-align: center;
+ 	margin-bottom: 2vh;
+ 	width: 30vw;
+ 	padding-right: 0;
+ 	padding-left: 0;
+
+ }
+
+
+/*form .centerform .user_icon {
+    position: relative;
+}
+    .user_icon::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto 0;
+      width: 5vh;
+      height: 5vh;
+      background-image: url(./images/user_icon.png) /*('https://www.iconfinder.com/icons/2931147/account_avatar_face_head_human_profile_user_icon');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }*/
+
+    .user_icon i, .user_password i {
+    	color: white;
+    	background: grey;
+      	padding: 1.5vh;
+    	width: 10%;
+
+    }
+
+    .centerform input {
+    	font-size: 1em;
+    	border: none;
+    	padding: 1.5vh;
+    	width: 90%;
+    	background: #F7F3EB;
+    	color: #E0DBD1;
+    }
+
+    .centerform li button {
+    	border: none;
+    	width: 100%;
+    	font-size: 1.5em;
+    	font-weight: bold;
+
+    }
+
+    .bottomform {
+    	width: 30vw;
+    	height: 5vh;
+    	margin: auto;
+    	margin-top: 5vh;
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: space-between;
+    	align-items: center;
+    	
+
+    }
+
+    
+   .bottomform label {
+        margin-left: 0;
+      	display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    .bottomform label span {
+        white-space: nowrap;
+    	color: #636360;
+    }
+
+    
+
+    .bottomform label input {
+    	border: 2px solid #F2672E;
+    	color: #F2672E;
+    	margin-right: .5vw;
+
+    }
+
+
+  .bottomform p {
+     	text-align: right;
+     	font-style: italic;
+     	
+    }
+
+    .bottomform p a:hover {
+    	color: #F2672E;
+    }
+
+    .bottomform p a {
+    	color: #636360;
+    	text-decoration: none;
+    }
+
+    .container .copyright {
+    	color: #636360;
+    	text-align: center;
+    }
+

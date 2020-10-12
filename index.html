@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Black Form</title>
+	<link rel="stylesheet" type="text/css" href="blackform.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a170123e6b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<figure class="logo">
+			<img src="./images/Logo.png" alt="lunarpixel logo">
+		</figure>
+		<form>
+			<h2>Login to your account</h2>
+			<ul class="centerform">
+				<li>
+					<label for="useremail" class="user_icon"><i class="fas fa-user"></i><input type="email" id="useremail" required name="useremail" placeholder="Username or Email"></label>
+				</li>
+			    <li> 
+				     <label for="userpassword" class="user_password"><i class="fas fa-lock"></i><input type="password" id="userpassword" required name="userpassword" placeholder="Password"></label>
+				 </li>
+				 <li>
+				 	<button type="submit">Login</button>  
+				 </li>
+			</ul>
+    
+            <div class="bottomform">
+			    <label for="remember"><input type="checkbox" id="remember" value="remember" name="userdata"><span>Remember Me</span></label>
+			    <p><a href="#">Forgot Password?</a></p>
+		    </div>
+		</form>
+		<p class="copyright">Copyright(c) 2014. Created by LunarPixel. </p>
+	</div>
+</body>
+</html>
