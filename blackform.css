@@ -11,13 +11,13 @@ ul {
 body {
 	font-family: 'Open Sans', sans-serif;
 	background: #282828; 
-	font-size: 1em;
+	font-size: 1vw;
 }
 
 .container {
 	background: #31302B;
-	width: 85vw;
-	height: 85vh;
+	min-width: 85vw;
+	min-height: 85vh;
 	margin: auto;
 	margin-top: 10vh;
 	padding: 10vh;
@@ -25,7 +25,8 @@ body {
 }
 
 .container .logo {
-	width: 10vw;
+	width: 100%;
+  text-align: center;
 	min-height: 10vh;
 	margin: auto;
 	
@@ -34,7 +35,7 @@ body {
 form {
 	background: #D2E8FC;
 	width: 40vw;
-	height: 50vh;
+	min-height: 50vh;
 	margin: auto;
 	margin-bottom: 5vh;
 	border: 10px solid #464541;
@@ -59,7 +60,7 @@ form h2, form .centerform li button {
 
 .centerform {
 	width: 30vw;
-	height: 20vh;
+	min-height: 20vh;
 	margin: auto;
 	margin-top: 6vh;
 
@@ -74,8 +75,8 @@ form h2, form .centerform li button {
 
  }
 
-
-/*form .centerform .user_icon {
+/*--------------------------------------С картинками-иконками -------------------------------------------
+form .centerform .user_icon, form .centerform .user_password {
     position: relative;
 }
     .user_icon::before {
@@ -87,12 +88,21 @@ form h2, form .centerform li button {
       margin: auto 0;
       width: 5vh;
       height: 5vh;
-      background-image: url(./images/user_icon.png) /*('https://www.iconfinder.com/icons/2931147/account_avatar_face_head_human_profile_user_icon');
+      background-image: url(./images/user_icon.png); 
       background-repeat: no-repeat;
       background-size: cover;
 
-    }*/
+    }
 
+    .user_icon i, .user_password i {
+      
+      background: grey;
+        padding: 1.5vh;
+      width: 10%;
+
+    }
+    */
+/*--------------------------------------С иконочным шрифтом -------------------------------------------*/
     .user_icon i, .user_password i {
     	color: white;
     	background: grey;
@@ -120,7 +130,7 @@ form h2, form .centerform li button {
 
     .bottomform {
     	width: 30vw;
-    	height: 5vh;
+    	min-height: 5vh;
     	margin: auto;
     	margin-top: 5vh;
     	display: flex;
@@ -155,6 +165,39 @@ form h2, form .centerform li button {
 
     }
 
+    .checkbox {
+            display: none;
+        }
+
+    .checkbox-custom .fa-check {display: none;}
+
+
+        .checkbox-custom {
+            width: 1vw;
+            height: 1vw;
+            display: inline-block;
+            border: 2px solid #F2672E;
+            margin-right: 1em;
+            position: relative;
+        }
+
+        .checkbox-custom .fa-check {
+          display: none;
+        }
+
+        .checkbox:checked+.checkbox-custom .fa-check{
+          display: block;
+          color: #F2672E;
+          font-size: .5vw;
+          position: absolute;
+          top: 2px;
+          bottom: 2px;
+          left: 2px;
+          right: 2px;
+            
+        }
+
+        
 
   .bottomform p {
      	text-align: right;
@@ -175,4 +218,30 @@ form h2, form .centerform li button {
     	color: #636360;
     	text-align: center;
     }
+/* media quiery ----------- */
+@media only screen and (max-width: 780px) {
+  body {font-size: 2vw;}
+.user_icon i, .user_password i {display: none;}
+.user_icon input, .user_password input{
+  width: 100%;}
+
+  .checkbox-custom {
+            width: 2vw;
+            height: 2vw;
+            
+        }
+.checkbox:checked+.checkbox-custom .fa-check {
+  font-size: 1vw;
+      }
+
+.bottomform {
+      flex-direction: column;
+    }
+
+.bottomform p {
+      text-align: center;
+      padding: 2vw;
+      
+    }    
+}
 

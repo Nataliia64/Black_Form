@@ -15,6 +15,7 @@
 		</figure>
 		<form>
 			<h2>Login to your account</h2>
+<!-- --------------------------------------С иконочным шрифтом ------------------------------------------- -->
 			<ul class="centerform">
 				<li>
 					<label for="useremail" class="user_icon"><i class="fas fa-user"></i><input type="email" id="useremail" required name="useremail" placeholder="Username or Email"></label>
@@ -26,9 +27,23 @@
 				 	<button type="submit">Login</button>  
 				 </li>
 			</ul>
+<!-- --------------------------------------С картинками-иконками ------------------------------------------- -->
+			<!--<ul class="centerform">
+				<li>
+					<label for="useremail" class="user_icon"><i class="icon"><img src="./images/user_icon.png"></i><input type="email" id="useremail" required name="useremail" placeholder="Username or Email"></label>
+				</li>
+			    <li> 
+				     <label for="userpassword" class="user_password"><i class="icon"><img src="./images/user_icon.png"></i><input type="password" id="userpassword" required name="userpassword" placeholder="Password"></label>
+				 </li>
+				 <li>
+				 	<button type="submit">Login</button>  
+				 </li>
+			</ul>      -->
     
             <div class="bottomform">
-			    <label for="remember"><input type="checkbox" id="remember" value="remember" name="userdata"><span>Remember Me</span></label>
+			    <label for="remember"><input type="checkbox" id="remember" value="remember" name="userdata" class="checkbox">
+                    <div class="checkbox-custom"><i class="fas fa-check"></i></div>
+			    	<span>Remember Me</span></label>
 			    <p><a href="#">Forgot Password?</a></p>
 		    </div>
 		</form>
